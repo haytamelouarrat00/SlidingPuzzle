@@ -5,6 +5,7 @@ import random
 
 def split_and_shuffle_image(image_path, count):
     # Load the image
+
     image = Image.open(image_path)
     width, height = image.size
 
@@ -35,6 +36,4 @@ def split_and_shuffle_image(image_path, count):
 
     return new_image
 
-
 new_image = split_and_shuffle_image("img.png", 16)
-new_image.show()
